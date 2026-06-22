@@ -3,8 +3,6 @@ package com.ethan.voxyworldgenv2.core;
 import com.ethan.voxyworldgenv2.VoxyWorldGenV2;
 import com.ethan.voxyworldgenv2.integration.VoxyIntegration;
 import com.ethan.voxyworldgenv2.integration.tellus.TellusIntegration;
-import com.ethan.voxyworldgenv2.mixin.MinecraftServerAccess;
-
 import com.ethan.voxyworldgenv2.mixin.ServerChunkCacheMixin;
 import com.ethan.voxyworldgenv2.stats.GenerationStats;
 import net.minecraft.resources.ResourceKey;
@@ -516,7 +514,6 @@ public final class ChunkGenerationManager {
     
     private void cleanupTask(ServerLevel level, ChunkPos pos) {
         queueTicketRemove(level, pos);
-        ((MinecraftServerAccess) server).setEmptyTicks(0);
         DimensionState state = dimensionStates.get(level.dimension());
         if (state != null) completeTask(state, pos);
     }

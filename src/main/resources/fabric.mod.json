@@ -26,10 +26,11 @@
     ]
   },
   "depends": {
-    "fabricloader": ">=0.16.0",
-    "minecraft": ">=1.21.6 <=1.21.11",
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "1.21.1",
     "java": ">=21",
-    "fabric-api": "*"
+    "fabric-api": ">=${fabric_api_version}",
+    "cloth-config2": ">=${cloth_config_version}"
   },
   "suggests": {
     "voxy": "*"
