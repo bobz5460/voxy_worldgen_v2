@@ -4,11 +4,7 @@
   "package": "com.ethan.voxyworldgenv2.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "ChunkMapMixin",
-    "MinecraftServerMixin",
-    "MinecraftServerAccess",
     "ServerChunkCacheMixin",
-    "ServerLevelMixin",
     "BlockUpdateMixin"
   ],
   "client": [],
